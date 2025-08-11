@@ -14,7 +14,7 @@ const BakerHotline = () => {
   return (
     <div className='px-4 py-10 md:px-16 lg:px-42 md:py-16 tracking-widest font-lato'>
         <div className='lg:flex block'>
-            <div className='relative w-full h-[30vh] lg:h-[60vh]'>
+            <div className='relative w-full h-[40vh] lg:h-[60vh]'>
                 <Image src={baking} alt='baking' layout='fill' objectFit='cover' quality={100}/>
                 <div className='absolute w-full h-full top-0 left-0 bg-black/70'></div>
                 <div className='z-40 relative lg:p-32 p-8'>

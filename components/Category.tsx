@@ -39,10 +39,10 @@ const Category = () => {
   ]
 
   return (
-    <div className='px-4 md:px-16 lg:px-42 py-10 md:py-16 tracking-widest font-lato'>
-        <div className='block md:flex w-full md:h-[55vh] h-[80vh]'>
-            <div className='w-full md:h-full h-2/3 lg:px-16 md:py-8'>
-                <div>
+    <div className='px-4 md:px-16 lg:px-42 py-10 md:py-16 tracking-widest font-lato relative'>
+        <div className='md:flex w-full md:h-[55vh] h-[100vh]'>
+            <div className='w-full md:h-full lg:px-16 md:py-8 h-[60vh]'>
+                <>
                     <SubHeading text='CATEGORIES' classname='justify-start text-[12px]'/>
                     <h1 className='font-play text-[22px] md:text-3xl tracking-tight 
                     font-bold mb-4'>Explore The Categories Of All Our Products</h1>
@@ -66,16 +66,16 @@ const Category = () => {
                         })
                       }
                     </div>
-                </div>
+                </>
             </div>
-            <div className='relative w-full md:h-full h-[40%]'>
+            <div className='relative w-full md:h-full h-[40vh]'>
                  <Image src={variety} alt='varieties' layout='fill' objectFit='cover' quality={100}/>
                  <div className='z-40 bg-white/90 absolute md:w-[70%] w-[80%] h-[70%] md:h-[50%] md:p-10 p-6
                  bottom-0 right-0'>
-                  <SubHeading text='OUR CATEGORIES' classname='text-[14px]'/>
-                  <h1 className='font-play text-2xl font-bold mb-4 tracking-tight'>Find The Product Here!</h1>
+                  <SubHeading text='OUR CATEGORIES' classname='text-[12px]'/>
+                  <h1 className='font-play text-[22px] font-bold mb-4 tracking-tight'>Find The Product Here!</h1>
                   <Link href='/product'><Button label='SEE PRODUCTS' classname='bg-green text-white font-bold
-                  text-sm'/></Link>
+                  text-[12px]'/></Link>
                  </div>
             </div>
         </div>
