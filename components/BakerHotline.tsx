@@ -18,7 +18,7 @@ const BakerHotline = () => {
                 <Image src={baking} alt='baking' layout='fill' objectFit='cover' quality={100}/>
                 <div className='absolute w-full h-full top-0 left-0 bg-black/70'></div>
                 <div className='z-40 relative lg:p-32 p-8'>
-                    <SubHeading text="BAKER'S HOTLINES" classname='text-white text-[12px]'/>
+                    <SubHeading text="BAKER&apos;S HOTLINES" classname='text-white text-[12px]'/>
                     <h1 className='font-play font-bold text-white tracking-tight mb-5 text-[22px]
                     md:text-3xl'>You Need Fresh Hot Butter Bread & Snacks? We&apos;re Not far From you!</h1>
                     <div className='flex gap-4'>
