@@ -20,7 +20,7 @@ const BakerHotline = () => {
                 <div className='z-40 relative lg:p-32 p-8'>
                     <SubHeading text="BAKER'S HOTLINES" classname='text-white text-[12px]'/>
                     <h1 className='font-play font-bold text-white tracking-tight mb-5 text-[22px]
-                    md:text-3xl'>You Need Fresh Hot Butter Bread & Snacks? We're Not far From you!</h1>
+                    md:text-3xl'>You Need Fresh Hot Butter Bread & Snacks? We&apos;re Not far From you!</h1>
                     <div className='flex gap-4'>
                         <Link href='tel:=2348064204567'><Button label='CALL NOW' classname='bg-green
                         text-white text-[12px]'/></Link>
