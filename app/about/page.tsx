@@ -1,8 +1,11 @@
+import Banner from '@/components/Banner'
 import React from 'react'
 
 const ABOUT = () => {
   return (
-    <div> ABOUT</div>
+    <div> 
+      <Banner heading='About Us' subHeading='Get To know More About Us Here!'/>
+    </div>
   )
 }
 

@@ -40,8 +40,8 @@ const Category = () => {
 
   return (
     <div className='px-4 md:px-16 lg:px-42 py-10 md:py-16 tracking-widest font-lato relative'>
-        <div className='md:flex w-full md:h-[55vh] h-[100vh]'>
-            <div className='w-full md:h-full lg:px-16 md:py-8 h-[60vh]'>
+        <div className='md:flex w-full md:h-[55vh]'>
+            <div className='w-full md:h-full lg:px-16 md:py-8 h-full mb-6 md:mb-0'>
                 <>
                     <SubHeading text='CATEGORIES' classname='justify-start text-[12px]'/>
                     <h1 className='font-play text-[22px] md:text-3xl tracking-tight 
@@ -69,7 +69,8 @@ const Category = () => {
                 </>
             </div>
             <div className='relative w-full md:h-full h-[40vh]'>
-                 <Image src={variety} alt='varieties' layout='fill' objectFit='cover' quality={100}/>
+                 <Image src={variety} alt='varieties' layout='fill' objectFit='cover' quality={100} className='relative
+                '/>
                  <div className='z-40 bg-white/90 absolute md:w-[70%] w-[80%] h-[70%] md:h-[50%] md:p-10 p-6
                  bottom-0 right-0'>
                   <SubHeading text='OUR CATEGORIES' classname='text-[12px]'/>

@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/bbb-logo.png'
@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation'
 import { SlBag } from 'react-icons/sl'
 import { GoPerson } from 'react-icons/go'
 import { HiOutlineBars3 } from 'react-icons/hi2'
+import { AiOutlineClose } from 'react-icons/ai'
 
 const Navbar = () => {
 
@@ -36,6 +37,8 @@ const Navbar = () => {
     ]
 
     const pathname = usePathname()
+
+    const [openNavBar, setOpenNavBar] = useState(false)
 
   return (
     <div className='font-lato fixed z-50 min-w-full shadow-md'>
@@ -71,7 +74,28 @@ const Navbar = () => {
             <div className='flex justify-between items-center text-2xl gap-4'>
                <SlBag className='cursor-pointer hover:text-brown'/> 
                <GoPerson className='cursor-pointer hover:text-brown'/>
-               <HiOutlineBars3 className='cursor-pointer md:hidden'/>
+               <span onClick={() => setOpenNavBar(!openNavBar)}>
+                {openNavBar ? <AiOutlineClose className='cursor-pointer md:hidden'/> :
+                <HiOutlineBars3 className='cursor-pointer md:hidden'/>}
+               </span>
+            </div>
+
+            {/******MOBILE NAVIGATION BAR */}
+            <div className={`md:hidden fixed bg-white right-0 top-[10%] z-50 w-full
+            p-6 h-full ${openNavBar ? 'block' : "hidden"}`}>
+                <ul>
+                    {
+                        navMenu.map(nav => {
+                            const {menu, id, href} = nav
+                            return(
+                                <li key={id} className='font-lato tracking-widest text-[18px] border-b-1
+                                border-gray-300 py-4 last:border-0' onClick={() => setOpenNavBar(false)}>
+                                    <Link href={href}>{menu}</Link>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
             </div>
 
         </div>

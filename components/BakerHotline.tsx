@@ -1,5 +1,6 @@
 import React from 'react'
 import baking from '@/public/baking.jpg'
+import nigeria from '@/public/nigeria.png'
 import Image from 'next/image'
 import SubHeading from './SubHeading'
 import Button from './Button'
@@ -8,7 +9,7 @@ import Link from 'next/link'
 const BakerHotline = () => {
 
     const supermarket: string[] = [
-        'TEMPLE HILL', 'PENNYEXPRESS', 'URBAN', 'GAZA', 'BLEND', 'MAXLAND', 'GLOBUS', 'K&C'
+        'TEMPLE HILL', 'PENNYEXPRESS', 'URBAN', 'GAZA', 'BLEND', 'MAXLAND', 'GLOBUS', 'K&C', 'TAIWO', 'GOODMAN'
     ]
 
   return (
@@ -32,9 +33,9 @@ const BakerHotline = () => {
             <div className='lg:w-1/3 w-full py-6 p-3'>
                 <SubHeading text="BREAD SUPPLY" classname='text-[12px] flex items-center justify-center'/>
                 <h1 className='font-play font-bold tracking-tight mb-5 text-[22px]
-                    md:text-3xl text-center'>Top Supermarket We Supply within Isolo, Ago Axis
+                    md:text-3xl text-center'>Do You Have Anything To Order? We Supply Nations-Wide
                 </h1>
-                <div className='grid grid-cols-2 gap-3'>
+                {/**<div className='grid grid-cols-2 gap-3'>
                     {
                         supermarket.map((s) => {
                             return(
@@ -44,7 +45,10 @@ const BakerHotline = () => {
                             )
                         })
                     }
-                </div>
+                </div>**/}
+                <figure>
+                    <Image src={nigeria} alt='Nigeria' width={500}/>
+                </figure>
             </div>
         </div>
     </div>

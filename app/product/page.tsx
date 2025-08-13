@@ -1,8 +1,11 @@
+import Banner from '@/components/Banner'
 import React from 'react'
 
 const product = () => {
   return (
-    <div>product</div>
+    <div>
+      <Banner heading='Bakery Products' subHeading='Explore All Our Bakery Products'/>
+    </div>
   )
 }
 
