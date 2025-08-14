@@ -1,10 +1,14 @@
+import AboutSection from '@/components/AboutSection'
 import Banner from '@/components/Banner'
+import Certificate from '@/components/Certificate'
 import React from 'react'
 
 const ABOUT = () => {
   return (
     <div> 
       <Banner heading='About Us' subHeading='Get To know More About Us Here!'/>
+      <AboutSection/>
+      <Certificate/>
     </div>
   )
 }

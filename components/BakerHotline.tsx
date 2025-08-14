@@ -33,7 +33,7 @@ const BakerHotline = () => {
             <div className='lg:w-1/3 w-full py-6 p-3'>
                 <SubHeading text="BREAD SUPPLY" classname='text-[12px] flex items-center justify-center'/>
                 <h1 className='font-play font-bold tracking-tight mb-5 text-[22px]
-                    md:text-3xl text-center'>Do You Have Anything To Order? We Supply Nations-Wide
+                    md:text-3xl text-center'>Do You Have Anything To Order? We Deliver Nationwide
                 </h1>
                 {/**<div className='grid grid-cols-2 gap-3'>
                     {

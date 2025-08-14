@@ -20,6 +20,11 @@ const Navbar = () => {
 
     const navMenu: NavMenuType[] = [
         {
+            id: 4,
+            menu: "HOME",
+            href: '/'
+        },
+        {
             id: 1,
             menu: "ABOUT US",
             href: '/about'
@@ -81,7 +86,7 @@ const Navbar = () => {
             </div>
 
             {/******MOBILE NAVIGATION BAR */}
-            <div className={`md:hidden fixed bg-white right-0 top-[10%] z-50 w-full
+            <div className={`md:hidden fixed bg-white right-0 top-[15%] w-full
             p-6 h-full ${openNavBar ? 'block' : "hidden"}`}>
                 <ul>
                     {
