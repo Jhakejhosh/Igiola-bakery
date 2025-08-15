@@ -6,7 +6,7 @@ import React from 'react'
 const ABOUT = () => {
   return (
     <div> 
-      <Banner heading='About Us' subHeading='Get To know More About Us Here!'/>
+      <Banner heading='About Us' subHeading='Meet British Butter Bakery Here!'/>
       <AboutSection/>
       <Certificate/>
     </div>

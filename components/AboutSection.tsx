@@ -11,7 +11,7 @@ const AboutSection = () => {
                 <Image src={baker} alt='Baker' width={400}/>
             </figure>
             <div className='w-full'>
-                <h1 className='font-bold font-play text-2xl py-5 lg:py-0 lg:pb-5'>Get To Know Us More</h1>
+                <h1 className='font-bold font-play text-2xl py-5 lg:py-0 lg:pb-5 tracking-tight'>Get To Know Us More</h1>
                 <p className='leading-7 font-medium'>At <b className='font-bold'>British Butter Bakery</b>, we believe that every bite should tell a story.
                 Our recipes blend with innovative twists, using only the finest, freshest
                 ingredients. From our warm, crusty artisan breads to our delicate pastries and decadant cakes, each creation is
