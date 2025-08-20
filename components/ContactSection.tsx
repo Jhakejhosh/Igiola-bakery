@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const ContactSection = () => {
   return (
-    <div  className='px-4 md:px-16 lg:px-42 pb-10 md:pb-16 tracking-widest font-lato relative'>
+    <div className='px-4 md:px-16 lg:px-42 pb-10 md:pb-16 tracking-widest font-lato relative'>
         <div className='text-center lg:flex lg:text-start'>
             <div className='lg:w-full pb-12'>
                 <h1 className='font-bold font-play text-2xl tracking-normal pb-4'>Connect With us</h1>
