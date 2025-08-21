@@ -17,8 +17,8 @@ const ProductCard = ({product}:ProductCardType) => {
                         return (
                             <div key={p.id} className='bg-gray-50 shadow-md p-2 text-center'>
                                 <span></span>
-                                <figure className='h-30 relative flex justify-center items-center'>
-                                    <Image src={p.product_img} alt={p.product_name} width={80}/>
+                                <figure className='h-35 relative flex justify-center items-center'>
+                                    <Image src={p.product_img} alt={p.product_name} width={100}/>
                                 </figure>
                                 <Link href='/' className='text-center'>
                                     <h2 className='font-medium py-3'>{p.product_name}</h2>

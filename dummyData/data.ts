@@ -17,6 +17,11 @@ import meat1 from '@/public/product16.png'
 import meat2 from '@/public/product17.png'
 import meat3 from '@/public/product18.png'
 import family1 from '@/public/familyLoaf.png'
+import family2 from '@/public/familyLoaf2.png'
+import family3 from '@/public/familyLoaf3.png'
+import jumbo1 from '@/public/jumbo1.png'
+import jumbo2 from '@/public/jumbo2.png'
+import jumbo3 from '@/public/jumbo3.png'
 import { StaticImageData } from 'next/image'
 
 export interface ProductType {
@@ -56,8 +61,8 @@ export const productData: ProductType[]= [
         price: 1500,
         weight: 800,
         description: "",
-        product_img: hotdog1,
-        other_img: [hotdog1, hotdog2, hotdog3]
+        product_img: family1,
+        other_img: [family1, family2, family3]
     },
     {
         id: 4,
@@ -75,8 +80,8 @@ export const productData: ProductType[]= [
         price: 2000,
         weight: 1,
         description: "",
-        product_img: sausage1,
-        other_img: [sausage1, sausage2, sausage3]
+        product_img: jumbo1,
+        other_img: [jumbo1, jumbo2, jumbo3]
     },
     {
         id: 6,
@@ -136,5 +141,15 @@ export const special_products: ProductType[] = [
         description: "",
         product_img: hotdog1,
         other_img: [hotdog1, hotdog2, hotdog3]
+    },
+    {
+        id: 4,
+        product_name: "Jumbo pack",
+        product_category: "Bread",
+        price: 2000,
+        weight: 1,
+        description: "",
+        product_img: jumbo1,
+        other_img: [jumbo1, jumbo2, jumbo3]
     }
 ]
