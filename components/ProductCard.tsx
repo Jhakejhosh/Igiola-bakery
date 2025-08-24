@@ -11,7 +11,7 @@ interface ProductCardType {
 
 const ProductCard = ({product}:ProductCardType) => {
   return (
-    <div className='md:flex justify-center items-center grid grid-cols-2 gap-3 md:gap-10 pt-4'>
+    <div className='md:grid md:grid-cols-4 grid grid-cols-2 gap-3 md:gap-10 pt-4'>
         {
                     product.map(p => {
                         return (
