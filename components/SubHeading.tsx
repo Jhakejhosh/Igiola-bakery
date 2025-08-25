@@ -7,7 +7,7 @@ interface SubHeadingType {
 
 const SubHeading = ({text, classname}:SubHeadingType) => {
   return (
-    <div className={`flex items-center gap-1 mb-5 font-bold ${classname}`}>
+    <div className={`flex items-center gap-1 mb-4 font-bold ${classname}`}>
         <p className='text-green'>---</p>
         <p className=''>{text}</p>
         <p className='text-green'>---</p>

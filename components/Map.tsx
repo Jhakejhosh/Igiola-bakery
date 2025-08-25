@@ -13,7 +13,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 const Map = () => {
   return (
     <>
-        <MapContainer center={[6.514193, 3.308678]} zoom={14} scrollWheelZoom={false} style={{
+        <MapContainer center={[6.514193, 3.308678]} zoom={15} scrollWheelZoom={false} style={{
             height: '400px',
             width: '100%'
         }}>
