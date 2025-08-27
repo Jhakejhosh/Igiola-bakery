@@ -20,7 +20,7 @@ const ProductCard = ({product}:ProductCardType) => {
                                 <figure className='h-35 relative flex justify-center items-center'>
                                     <Image src={p.product_img} alt={p.product_name} width={100}/>
                                 </figure>
-                                <Link href='/' className='text-center'>
+                                <Link href={`/product/${p.id}`} className='text-center'>
                                     <h2 className='font-medium py-3'>{p.product_name}</h2>
                                     <p className='font-bold pb-3'><Naira/>{p.price}</p>
                                 </Link>

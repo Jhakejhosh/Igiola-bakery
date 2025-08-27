@@ -23,6 +23,7 @@ import jumbo1 from '@/public/jumbo1.png'
 import jumbo2 from '@/public/jumbo2.png'
 import jumbo3 from '@/public/jumbo3.png'
 import { StaticImageData } from 'next/image'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 export interface ProductType {
     id: number,
