@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import { Naira } from '@/utils/nairaSymbol'
 
-const page = () => {
+const ProductByIdpage = () => {
     const {productID} = useParams()
     const product = productData.find(p => p.id.toString() === productID)
 
@@ -57,4 +57,4 @@ const page = () => {
   )
 }
 
-export default page
+export default ProductByIdpage
