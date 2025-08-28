@@ -6,6 +6,10 @@ import { StaticImageData, StaticImport } from 'next/dist/shared/lib/get-img-prop
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import { Naira } from '@/utils/nairaSymbol'
+import Button from '@/components/Button'
+import Link from 'next/link'
+import { PiDotDuotone } from 'react-icons/pi'
+import ProductCard from '@/components/ProductCard'
 
 const ProductByIdpage = () => {
     const {productID} = useParams()
@@ -18,6 +22,12 @@ const ProductByIdpage = () => {
       setSelectedImg(image)
       setActiveImg(image)
     }
+
+    const theSameProducts = productData.filter(p => p.product_category === product?.product_category)
+    const similarProducts = theSameProducts.filter(p => p.id !== product?.id)
+    console.log(similarProducts)
+     
+
 
 
   return (
@@ -47,12 +57,28 @@ const ProductByIdpage = () => {
           }
         </>
         <div className='w-full mt-6 lg:mt-0'>
-          <h1 className='font-bold text-2xl'>{product?.product_name}</h1>
-          <p>{product?.product_category}</p>
-          <p><Naira/>{product?.price}</p>
-          <p>{product?.description}</p>
+          <h1 className='font-bold text-2xl'>{product?.product_name}{product?.weight && `(${product.weight})`}</h1>
+          <div className='py-4 flex items-center gap-1'>
+            <p>{product?.product_category}</p>
+            <span className='text-green font-bold text-4xl'><PiDotDuotone/></span>
+          </div>
+          <p className='font-bold text-[16px]'><Naira/>{product?.price}</p>
+          <p className='py-4 font-normal leading-7'>{product?.description}</p>
+          <Link href='tel:=2348064204567'>
+              <Button label='CALL TO ORDER' classname='bg-green text-white text-[11px] w-full lg:w-auto'/>
+          </Link>
         </div>
       </div>
+
+      {/*****Similar Product Section******/}
+      {
+        similarProducts.length>=1 && (
+          <div className='pt-10'>
+            <h1 className='font-play font-bold tracking-normal text-xl'>Similar Products</h1>
+            <ProductCard product={similarProducts}/>
+          </div>
+        )
+      }
     </div>
   )
 }

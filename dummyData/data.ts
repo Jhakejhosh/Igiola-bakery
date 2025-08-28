@@ -30,7 +30,7 @@ export interface ProductType {
     product_name: string,
     product_category: string,
     price: number,
-    weight?: number,
+    weight?: string,
     description: string,
     product_img: StaticImageData,
     other_img: StaticImageData[],
@@ -42,7 +42,8 @@ export const productData: ProductType[]= [
         product_name: "Hotdog",
         product_category: "Pastry",
         price: 500,
-        description: "",
+        description: 
+        "A delicate, rich, and often flaky dough that forms the foundation of a wide variety of baked treats, from the crust of a savory quiche to the layers of a sweet fruit tart.",
         product_img: hotdog1,
         other_img: [hotdog1, hotdog2, hotdog3]
     },
@@ -51,7 +52,7 @@ export const productData: ProductType[]= [
         product_name: "Chocolate Cake",
         product_category: "Cakes and cup cakes",
         price: 10000,
-        description: "",
+        description: "A festive and celebratory baked good, cakes are a diverse category of sweet treats ranging from light and airy sponge cakes to dense and decadent chocolate cakes, often decorated with frosting, fruit, or other embellishments.",
         product_img: cake1,
         other_img: [cake1, cake2, cake3]
     },
@@ -60,8 +61,9 @@ export const productData: ProductType[]= [
         product_name: "Family Loaf",
         product_category: "Bread",
         price: 1500,
-        weight: 800,
-        description: "",
+        weight: "800g",
+        description: 
+        "Bread is a baked food made from a mixture of flour, water, and usually yeast. It comes in countless forms, from crusty artisan loaves to soft sandwich slices, and serves as a cornerstone of meals and cultures across the globe.",
         product_img: family1,
         other_img: [family1, family2, family3]
     },
@@ -70,7 +72,7 @@ export const productData: ProductType[]= [
         product_name: "Sausage roll",
         product_category: "Pastry",
         price: 500,
-        description: "",
+        description: "A delicate, rich, and often flaky dough that forms the foundation of a wide variety of baked treats, from the crust of a savory quiche to the layers of a sweet fruit tart.",
         product_img: sausage1,
         other_img: [sausage1, sausage2, sausage3]
     },
@@ -79,8 +81,9 @@ export const productData: ProductType[]= [
         product_name: "Jumbo pack",
         product_category: "Bread",
         price: 2000,
-        weight: 1,
-        description: "",
+        weight: "1Kg",
+        description: 
+        "Bread is a baked food made from a mixture of flour, water, and usually yeast. It comes in countless forms, from crusty artisan loaves to soft sandwich slices, and serves as a cornerstone of meals and cultures across the globe.",
         product_img: jumbo1,
         other_img: [jumbo1, jumbo2, jumbo3]
     },
@@ -89,7 +92,7 @@ export const productData: ProductType[]= [
         product_name: "Doughnut",
         product_category: "Pastry",
         price: 300,
-        description: "",
+        description: "A delicate, rich, and often flaky dough that forms the foundation of a wide variety of baked treats, from the crust of a savory quiche to the layers of a sweet fruit tart.",
         product_img: donut1,
         other_img: [donut1, donut2, donut3]
     },
@@ -98,7 +101,7 @@ export const productData: ProductType[]= [
         product_name: "Meat & Chicken pie",
         product_category: "Pastry",
         price: 700,
-        description: "",
+        description: "A delicate, rich, and often flaky dough that forms the foundation of a wide variety of baked treats, from the crust of a savory quiche to the layers of a sweet fruit tart.",
         product_img: meat1,
         other_img: [meat1, meat2, meat3]
     },
@@ -107,7 +110,7 @@ export const productData: ProductType[]= [
         product_name: "Jam Doughnut",
         product_category: "Pastry",
         price: 400,
-        description: "",
+        description: "A delicate, rich, and often flaky dough that forms the foundation of a wide variety of baked treats, from the crust of a savory quiche to the layers of a sweet fruit tart.",
         product_img: jam_donut1,
         other_img: [jam_donut1, jam_donut2, jam_donut3]
     }
@@ -116,17 +119,17 @@ export const productData: ProductType[]= [
 
 export const special_products: ProductType[] = [
     {
-        id: 1,
+        id: 9,
         product_name: "Family Loaf",
         product_category: "Bread",
         price: 1500,
-        weight: 800,
+        weight: "800g",
         description: "",
         product_img: family1,
         other_img: [hotdog1, hotdog2, hotdog3]
     },
     {
-        id: 2,
+        id: 10,
         product_name: "Doughnut",
         product_category: "Pastry",
         price: 300,
@@ -135,7 +138,7 @@ export const special_products: ProductType[] = [
         other_img: [donut1, donut2, donut3]
     },
     {
-        id: 3,
+        id: 11,
         product_name: "Hotdog",
         product_category: "Pastry",
         price: 500,
@@ -144,11 +147,11 @@ export const special_products: ProductType[] = [
         other_img: [hotdog1, hotdog2, hotdog3]
     },
     {
-        id: 4,
+        id: 12,
         product_name: "Jumbo pack",
         product_category: "Bread",
         price: 2000,
-        weight: 1,
+        weight: "1Kg",
         description: "",
         product_img: jumbo1,
         other_img: [jumbo1, jumbo2, jumbo3]

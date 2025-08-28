@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '@/public/bbb-logo.png'
 import { usePathname } from 'next/navigation'
-import { SlBag } from 'react-icons/sl'
+import { IoLogoWhatsapp, IoCallOutline } from 'react-icons/io5'
 import { GoPerson } from 'react-icons/go'
 import { HiOutlineBars3 } from 'react-icons/hi2'
 import { AiOutlineClose } from 'react-icons/ai'
@@ -77,8 +77,8 @@ const Navbar = () => {
                 </ul>
             </nav>
             <div className='flex justify-between items-center text-2xl gap-4'>
-               <SlBag className='cursor-pointer hover:text-brown'/> 
-               <GoPerson className='cursor-pointer hover:text-brown'/>
+               <Link href='tel:=2348064204567'><IoCallOutline className='cursor-pointer hover:text-brown'/> </Link>
+               <Link href='https://wa.me/2348064204567'><IoLogoWhatsapp className='cursor-pointer hover:text-brown text-green'/></Link>
                <span onClick={() => setOpenNavBar(!openNavBar)}>
                 {openNavBar ? <AiOutlineClose className='cursor-pointer md:hidden'/> :
                 <HiOutlineBars3 className='cursor-pointer md:hidden'/>}
@@ -86,7 +86,7 @@ const Navbar = () => {
             </div>
 
             {/******MOBILE NAVIGATION BAR */}
-            <div className={`md:hidden fixed bg-white right-0 top-[15%] w-full
+            <div className={`md:hidden fixed bg-white right-0 top-[12%] w-full -z-10
             p-6 h-full ${openNavBar ? 'block' : "hidden"}`}>
                 <ul>
                     {
